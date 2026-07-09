@@ -132,7 +132,7 @@ Lambda function responsible for generating and sending personalized emails.
 
 Verified identity used to deliver emails securely.
 
-![SES](Screenshots/SES_Indentities_setup.png)
+![SES](Screenshots/SES_Identities_setup.png)
 
 ---
 
@@ -419,6 +419,3 @@ Cloud • Data Analytics • Machine Learning
 If you found this project useful, consider giving it a ⭐ on GitHub.
 
 ---
----
-
-# 🚀 Installation
