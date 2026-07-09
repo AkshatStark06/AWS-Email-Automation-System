@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CloudNova Weekly Infrastructure Report</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#eef3f9;
+font-family:Arial,Helvetica,sans-serif;
+color:#2c3e50;
+padding:40px 15px;
+}
+
+.wrapper{
+width:100%;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+background:#ffffff;
+border-radius:14px;
+overflow:hidden;
+box-shadow:0 12px 35px rgba(0,0,0,.08);
+}
+
+.header{
+background:linear-gradient(135deg,#0b3d91,#3d7eff);
+padding:45px;
+text-align:center;
+color:white;
+}
+
+.header h1{
+font-size:34px;
+margin-bottom:10px;
+}
+
+.header p{
+font-size:17px;
+opacity:.9;
+}
+
+.report-bar{
+background:#f7f9fc;
+padding:18px 35px;
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+border-bottom:1px solid #e6e6e6;
+font-size:14px;
+color:#666;
+}
+
+.report-bar div{
+margin:5px 0;
+}
+
+.content{
+padding:40px;
+}
+
+.content h2{
+color:#0b3d91;
+margin-bottom:18px;
+}
+
+.content p{
+line-height:1.8;
+margin-bottom:18px;
+font-size:15px;
+}
+
+.summary{
+background:#eef6ff;
+border-left:6px solid #2563eb;
+padding:25px;
+border-radius:10px;
+margin:30px 0;
+}
+
+.summary h3{
+margin-bottom:15px;
+color:#0b3d91;
+}
+
+.summary ul{
+padding-left:20px;
+}
+
+.summary li{
+margin-bottom:12px;
+line-height:1.7;
+}
+
+.section-title{
+font-size:24px;
+color:#0b3d91;
+margin-top:40px;
+margin-bottom:20px;
+}
+
+.stats{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+font-size:15px;
+}
+
+.stats th{
+background:#0b3d91;
+color:white;
+padding:14px;
+text-align:left;
+}
+
+.stats td{
+padding:14px;
+border-bottom:1px solid #ececec;
+}
+
+.stats tr:nth-child(even){
+background:#fafafa;
+}
+
+.good{
+color:#0a8f4f;
+font-weight:bold;
+}
+
+.warning{
+color:#d97706;
+font-weight:bold;
+}
+
+.card{
+margin-top:35px;
+padding:25px;
+background:#fafafa;
+border:1px solid #e5e5e5;
+border-radius:10px;
+}
+
+.card h3{
+color:#0b3d91;
+margin-bottom:18px;
+}
+
+.card ul{
+padding-left:22px;
+}
+
+.card li{
+margin-bottom:12px;
+line-height:1.7;
+}
+
+.highlight{
+background:#eef5ff;
+border-radius:8px;
+padding:18px;
+margin-top:18px;
+}
+
+.button{
+display:inline-block;
+margin-top:35px;
+padding:15px 32px;
+background:#2563eb;
+color:white !important;
+text-decoration:none;
+font-weight:bold;
+border-radius:8px;
+}
+
+.button:hover{
+background:#1e4fc8;
+}
+
+.footer{
+margin-top:45px;
+background:#f7f7f7;
+padding:30px;
+text-align:center;
+font-size:13px;
+color:#666;
+}
+
+.footer small{
+display:block;
+margin-top:10px;
+line-height:1.7;
+}
+
+@media(max-width:700px){
+
+.header{
+padding:30px;
+}
+
+.header h1{
+font-size:28px;
+}
+
+.content{
+padding:25px;
+}
+
+.report-bar{
+display:block;
+}
+
+.stats{
+font-size:13px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<div class="container">
+
+<div class="header">
+
+<h1>☁ CloudNova Technologies</h1>
+
+<p>Weekly Cloud Infrastructure & Operations Report</p>
+
+</div>
+
+<div class="report-bar">
+
+<div>
+<strong>Report ID:</strong> OPS-2026-0709
+</div>
+
+<div>
+<strong>Environment:</strong> Production
+</div>
+
+<div>
+<strong>Region:</strong> ap-south-1
+</div>
+
+<div>
+<strong>Generated:</strong> Monday • 09:00 UTC
+</div>
+
+</div>
+
+<div class="content">
+
+<h2>Hello {{FirstName}},</h2>
+
+<p>
+
+Your automated weekly infrastructure report is ready.
+
+This report summarizes the operational health of your AWS environment, highlights security observations, identifies potential cost savings, and provides recommendations for maintaining a reliable cloud infrastructure.
+
+</p>
+
+<div class="summary">
+
+<h3>Executive Summary</h3>
+
+<ul>
+
+<li>✅ Infrastructure Availability: <strong>99.98%</strong></li>
+
+<li>✅ Production Services: <strong>Operational</strong></li>
+
+<li>✅ Automated Backups: <strong>Completed Successfully</strong></li>
+
+<li>✅ CloudFront CDN Performance: <strong>Healthy</strong></li>
+
+<li>⚠ IAM Security Review: <strong>1 Action Recommended</strong></li>
+
+<li>💰 Estimated Monthly Cost Savings Opportunity: <strong>$43</strong></li>
+
+</ul>
+
+</div>
+
+<div class="section-title">
+
+AWS Service Health
+
+</div>
+
+<table class="stats">
+
+<tr>
+
+<th>AWS Service</th>
+
+<th>Status</th>
+
+<th>Last Checked</th>
+
+</tr>
+
+<tr>
+
+<td>Amazon EC2</td>
+
+<td class="good">Healthy</td>
+
+<td>08:00 UTC</td>
+
+</tr>
+
+<tr>
+
+<td>AWS Lambda</td>
+
+<td class="good">Operational</td>
+
+<td>08:02 UTC</td>
+
+</tr>
+
+<tr>
+
+<td>Amazon S3</td>
+
+<td class="good">99.99% Available</td>
+
+<td>08:01 UTC</td>
+
+</tr>
+
+<tr>
+
+<td>Amazon RDS</td>
+
+<td class="good">Backup Completed</td>
+
+<td>07:45 UTC</td>
+
+</tr>
+
+<tr>
+
+<td>Amazon CloudFront</td>
+
+<td class="good">Global Delivery Active</td>
+
+<td>08:03 UTC</td>
+
+</tr>
+
+<tr>
+
+<td>IAM Security Review</td>
+
+<td class="warning">Review Required</td>
+
+<td>Weekly</td>
+
+</tr>
+
+</table>
+<div class="card">
+
+<h3>🔒 Priority Security Recommendations</h3>
+
+<ul>
+
+<li>Review inactive IAM users and remove accounts that are no longer required.</li>
+
+<li>Rotate access keys older than <strong>90 days</strong> to follow AWS security best practices.</li>
+
+<li>Enable Multi-Factor Authentication (MFA) for all privileged IAM users.</li>
+
+<li>Review administrator policies and enforce the Principle of Least Privilege.</li>
+
+<li>Enable AWS Config rules to continuously monitor compliance.</li>
+
+</ul>
+
+<div class="highlight">
+
+<strong>Security Score:</strong> 92 / 100
+
+<br><br>
+
+No critical vulnerabilities detected.
+One medium-priority IAM recommendation requires administrator review.
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>💰 Cost Optimization Summary</h3>
+
+<ul>
+
+<li>Move infrequently accessed Amazon S3 objects to Glacier Instant Retrieval.</li>
+
+<li>Delete unused EBS snapshots created over 90 days ago.</li>
+
+<li>Review idle Elastic IP addresses attached to stopped instances.</li>
+
+<li>Rightsize underutilized EC2 instances based on CloudWatch metrics.</li>
+
+<li>Review Lambda functions with low invocation frequency.</li>
+
+</ul>
+
+<div class="highlight">
+
+<strong>Estimated Monthly Savings</strong>
+
+<h2 style="color:#16a34a;margin-top:12px;">≈ $43.20</h2>
+
+Potential savings identified across storage and compute resources.
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>📋 Report Information</h3>
+
+<table style="width:100%;border-collapse:collapse;font-size:15px;">
+
+<tr>
+
+<td style="padding:10px 0;"><strong>Generated By</strong></td>
+
+<td>CloudNova Serverless Notification Platform</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px 0;"><strong>Cloud Provider</strong></td>
+
+<td>Amazon Web Services</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px 0;"><strong>Infrastructure Region</strong></td>
+
+<td>ap-south-1</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px 0;"><strong>Environment</strong></td>
+
+<td>Production</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px 0;"><strong>Report Generated</strong></td>
+
+<td>Monday • 09:00 UTC</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px 0;"><strong>Reference ID</strong></td>
+
+<td>OPS-2026-0709</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<center>
+
+<a href="#" class="button">
+
+Open Operations Dashboard
+
+</a>
+
+</center>
+
+<p style="margin-top:45px;line-height:1.8;">
+
+This report has been automatically generated by the
+<strong>CloudNova Serverless Notification Platform</strong>.
+
+The reporting workflow is powered by AWS serverless services and is scheduled to execute every Monday morning to provide infrastructure visibility, operational insights, and security recommendations to the Cloud Operations team.
+
+</p>
+
+<p style="margin-top:35px;line-height:1.8;">
+
+Thank you,
+
+<br><br>
+
+<strong>Cloud Operations Team</strong>
+
+<br>
+
+CloudNova Technologies
+
+</p>
+
+</div>
+
+<div class="footer">
+
+<strong>CloudNova Technologies</strong>
+
+<br><br>
+
+This is an automated infrastructure notification intended for internal operational monitoring.
+
+Please do not reply directly to this email.
+
+<small>
+
+Powered by
+
+<br>
+
+AWS Lambda • Amazon SES • Amazon EventBridge • Amazon S3
+
+<br><br>
+
+© 2026 CloudNova Technologies. All Rights Reserved.
+
+</small>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
